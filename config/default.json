@@ -1,0 +1,16 @@
+{
+  "xirsys": {
+    "gateway": "global.xirsys.net",
+    "info": {
+      "ident": "gartner90",
+      "secret": "f2b304bc-78be-11e7-8c06-4a27dd67a91e",
+      "channel": "cha1"
+    },
+    "allowedServices": ["/_token", "/_host", "/_data", "/_ns", "/_turn"],
+    "overrideAllowedChannel": false
+  },
+  "host":{
+    "httpport": 3080,
+    "httpsport": 3443
+  }
+}
