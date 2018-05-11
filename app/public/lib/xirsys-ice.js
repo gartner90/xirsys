@@ -55,7 +55,7 @@ _ice.prototype.doICE = function () {
         }
     }
     var path = this.apiUrl+"/_turn"+this.channelPath;
-    xhr.open("PUT", path, true);
+    xhr.open("PUT", 'http://evex-cams.herokuapp.com/webrtc/_turn', true);
     xhr.send();
 }
 
