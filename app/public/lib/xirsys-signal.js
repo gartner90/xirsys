@@ -96,7 +96,7 @@ _sig.prototype.doToken = function(){
 _sig.prototype.doSignal = function(){
     console.log('*signal*  GET doSignal to '+this.apiUrl+'/_host'+this.channelPath+'?type=signal&k='+this.userName);
     var own = this;
-    var path = this.info.channel ? this.apiUrl+'/_host'+this.channelPath+'?type=signal&k='+this.userName :this.apiUrl+'/_host?type=signal&k='+this.userName;
+    var path = this.info.channel ? 'http://evex-cams.herokuapp.com'+this.apiUrl+'/_host'+this.channelPath+'?type=signal&k='+this.userName :this.apiUrl+'/_host?type=signal&k='+this.userName;
     $.ajax({
         url: path,
         type: 'GET',
