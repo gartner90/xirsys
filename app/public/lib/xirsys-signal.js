@@ -73,7 +73,7 @@ _sig.prototype.connectTo = function(channel){
 }
 
 _sig.prototype.doToken = function(){
-    var path = this.apiUrl+"/_token"+this.channelPath+"?k="+this.userName;
+    var path = 'http://evex-cams.herokuapp.com/'+this.apiUrl+"/_token"+this.channelPath+"?k="+this.userName;
     console.log('*signal*  PUT doToken to '+path);
     var own = this;
     $.ajax({
